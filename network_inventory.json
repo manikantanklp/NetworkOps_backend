@@ -1,0 +1,71 @@
+[
+    {
+        "hostname": "R1",
+        "vendor": "Cisco",
+        "interfaces": [
+            "192.168.1.1",
+            "192.168.3.1",
+            "192.168.5.1",
+            "192.168.4.1"
+        ],
+        "neighbors": [
+            "Switch1.network.local",
+            "Switch2.network.local",
+            "R2.network.local"
+        ],
+        "username": "netkode",
+        "password": "netkode"
+    },
+    {
+        "hostname": "Switch1",
+        "vendor": "Cisco",
+        "interfaces": [
+            "192.168.3.2",
+            "192.168.6.2"
+        ],
+        "neighbors": [
+            "L2_Dumb.network.local",
+            "L2_switch1.network.local",
+            "L2_switch2.network.local",
+            "L2_switch3.network.local",
+            "R1.network.local",
+            "R2.network.local"
+        ],
+        "username": "netkode",
+        "password": "netkode"
+    },
+    {
+        "hostname": "Switch2",
+        "vendor": "Cisco",
+        "interfaces": [
+            "192.168.5.2",
+            "192.168.7.2"
+        ],
+        "neighbors": [
+            "L2_Dumb.network.local",
+            "L2_switch1.network.local",
+            "L2_switch2.network.local",
+            "L2_switch3.network.local",
+            "R1.network.local",
+            "R2.network.local"
+        ],
+        "username": "netkode",
+        "password": "netkode"
+    },
+    {
+        "hostname": "R2",
+        "vendor": "Cisco",
+        "interfaces": [
+            "192.168.4.2",
+            "192.168.6.1",
+            "192.168.7.1"
+        ],
+        "neighbors": [
+            "Switch1.network.local",
+            "Switch2.network.local",
+            "R1.network.local"
+        ],
+        "username": "netkode",
+        "password": "netkode"
+    }
+]

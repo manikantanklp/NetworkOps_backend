@@ -1,0 +1,20 @@
+{
+  "rules": [
+    {"id":"rule-ssh","name":"SSH enabled (no Telnet)","severity":"high"},
+    {"id":"rule-no-default-pwd","name":"Default password removed","severity":"high"},
+    {"id":"rule-snmp","name":"SNMP community not 'public'","severity":"high"},
+    {"id":"rule-logging","name":"Logging enabled","severity":"medium"},
+    {"id":"rule-ntp","name":"NTP configured","severity":"medium"},
+    {"id":"rule-banner","name":"Security login banner present","severity":"low"}
+  ],
+  "results": [
+    {"deviceId":"R1","passed":["rule-ssh","rule-no-default-pwd","rule-snmp","rule-ntp","rule-banner"],"failed":[]},
+    {"deviceId":"R2","passed":["rule-ssh","rule-no-default-pwd","rule-snmp","rule-banner"],"failed":["rule-ntp"]},
+    {"deviceId":"SW-A","passed":["rule-ssh","rule-no-default-pwd","rule-snmp","rule-ntp"],"failed":["rule-banner"]},
+    {"deviceId":"SW-B","passed":["rule-ssh"],"failed":["rule-snmp","rule-ntp","rule-banner"]},
+    {"deviceId":"ASW-1","passed":["rule-ssh","rule-no-default-pwd","rule-snmp","rule-ntp"],"failed":[]},
+    {"deviceId":"ASW-2","passed":["rule-ssh","rule-ntp"],"failed":["rule-snmp"]},
+    {"deviceId":"ASW-3","passed":["rule-ssh"],"failed":["rule-snmp","rule-ntp"]},
+    {"deviceId":"ASW-4","passed":["rule-ssh","rule-no-default-pwd","rule-snmp","rule-ntp","rule-banner"],"failed":[]}
+  ]
+}

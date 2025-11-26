@@ -1,0 +1,12 @@
+[
+  {"id":1,"source":"R1","target":"tap0","subnet":"192.168.1.0/24","description":"R1 g0/0 ↔ tap0"},
+  {"id":2,"source":"R1","target":"SW-A","subnet":"192.168.3.0/24","description":"R1 g1/0 ↔ Switch-A g0/0"},
+  {"id":3,"source":"R1","target":"SW-B","subnet":"192.168.5.0/24","description":"R1 g4/0 ↔ Switch-B g1/1"},
+  {"id":4,"source":"R2","target":"tap0","subnet":"192.168.2.0/24","description":"R2 g0/0 ↔ tap0"},
+  {"id":5,"source":"R2","target":"SW-A","subnet":"192.168.6.0/24","description":"R2 g4/0 ↔ Switch-A g1/1"},
+  {"id":6,"source":"R2","target":"SW-B","subnet":"192.168.7.0/24","description":"R2 g1/0 ↔ Switch-B g0/0"},
+  {"id":7,"source":"SW-A","target":"ASW-1","subnet":"192.168.10.0/24","description":"VLAN10"},
+  {"id":8,"source":"SW-A","target":"ASW-2","subnet":"192.168.20.0/24","description":"VLAN20"},
+  {"id":9,"source":"SW-A","target":"ASW-3","subnet":"192.168.30.0/24","description":"VLAN30"},
+  {"id":10,"source":"SW-A","target":"ASW-4","subnet":"192.168.40.0/24","description":"VLAN40"}
+]

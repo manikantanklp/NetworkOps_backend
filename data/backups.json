@@ -1,0 +1,38 @@
+[
+  {
+    "deviceId": "R1",
+    "timestamp": "2025-11-23T02:00:00Z",
+    "configVersion": "R1-v4",
+    "changes": ["OSPF cost adjustments on R1-R2 link", "Updated NTP server to 192.168.1.100"]
+  },
+  {
+    "deviceId": "R1",
+    "timestamp": "2025-11-24T02:00:00Z",
+    "configVersion": "R1-v5",
+    "changes": ["Added route to VLAN30 network", "Enabled BFD on core links"]
+  },
+  {
+    "deviceId": "ASW-3",
+    "timestamp": "2025-11-23T01:30:00Z",
+    "configVersion": "ASW3-v2",
+    "changes": ["Initial VLAN10/20 trunk config", "Port-security configured"]
+  },
+  {
+    "deviceId": "ASW-3",
+    "timestamp": "2025-11-24T01:40:00Z",
+    "configVersion": "ASW3-v3",
+    "changes": ["Added VLAN30 SVI", "Updated QoS policy for video"]
+  },
+  {
+    "deviceId": "SW-B",
+    "timestamp": "2025-11-23T21:00:00Z",
+    "configVersion": "SWB-v3",
+    "changes": ["SNMP community set to 'public' (temp)"]
+  },
+  {
+    "deviceId": "SW-B",
+    "timestamp": "2025-11-24T02:15:00Z",
+    "configVersion": "SWB-v4",
+    "changes": ["Attempted remediation: change SNMP community", "NTP config missing in backup"]
+  }
+]

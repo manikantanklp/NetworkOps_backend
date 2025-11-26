@@ -1,0 +1,52 @@
+[
+  {
+    "id": "A-201",
+    "deviceId": "R2",
+    "severity": "critical",
+    "type": "cpu-high",
+    "openedAt": "2025-11-23T22:10:00Z",
+    "closedAt": null,
+    "status": "open",
+    "message": "R2 CPU > 85% for 10 minutes"
+  },
+  {
+    "id": "A-202",
+    "deviceId": "SW-B",
+    "severity": "major",
+    "type": "config-drift",
+    "openedAt": "2025-11-23T21:05:00Z",
+    "closedAt": "2025-11-24T01:20:00Z",
+    "status": "closed",
+    "message": "Running-config differs from last backup on Switch-B"
+  },
+  {
+    "id": "A-203",
+    "deviceId": "ASW-3",
+    "severity": "major",
+    "type": "interface-errors",
+    "openedAt": "2025-11-24T00:30:00Z",
+    "closedAt": null,
+    "status": "open",
+    "message": "High CRC errors on ASW-3 Gi0/2 (VLAN30)"
+  },
+  {
+    "id": "A-204",
+    "deviceId": "ASW-2",
+    "severity": "minor",
+    "type": "link-flap",
+    "openedAt": "2025-11-24T01:00:00Z",
+    "closedAt": "2025-11-24T01:25:00Z",
+    "status": "closed",
+    "message": "Access port flapping on ASW-2 Gi0/3"
+  },
+  {
+    "id": "A-205",
+    "deviceId": "SW-B",
+    "severity": "critical",
+    "type": "ospf-neighbor-down",
+    "openedAt": "2025-11-24T02:10:00Z",
+    "closedAt": null,
+    "status": "open",
+    "message": "OSPF adjacency to R2 down on SW-B Gi0/0"
+  }
+]

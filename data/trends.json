@@ -1,0 +1,43 @@
+{
+  "7d": [
+    {"date":"2025-11-18","avgHealthScore":86,"automationSuccessRate":80,"totalAutomationTasks":4,"openIncidentsCount":2},
+    {"date":"2025-11-19","avgHealthScore":87,"automationSuccessRate":82,"totalAutomationTasks":5,"openIncidentsCount":2},
+    {"date":"2025-11-20","avgHealthScore":88,"automationSuccessRate":85,"totalAutomationTasks":4,"openIncidentsCount":1},
+    {"date":"2025-11-21","avgHealthScore":86,"automationSuccessRate":78,"totalAutomationTasks":3,"openIncidentsCount":3},
+    {"date":"2025-11-22","avgHealthScore":89,"automationSuccessRate":90,"totalAutomationTasks":5,"openIncidentsCount":1},
+    {"date":"2025-11-23","avgHealthScore":84,"automationSuccessRate":75,"totalAutomationTasks":4,"openIncidentsCount":3},
+    {"date":"2025-11-24","avgHealthScore":87,"automationSuccessRate":86,"totalAutomationTasks":5,"openIncidentsCount":2}
+  ],
+  "30d": [
+    {"date":"2025-10-26","avgHealthScore":83,"automationSuccessRate":78,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-10-27","avgHealthScore":84,"automationSuccessRate":80,"totalAutomationTasks":4,"openIncidentsCount":2},
+    {"date":"2025-10-28","avgHealthScore":85,"automationSuccessRate":82,"totalAutomationTasks":3,"openIncidentsCount":1},
+    {"date":"2025-10-29","avgHealthScore":83,"automationSuccessRate":79,"totalAutomationTasks":2,"openIncidentsCount":2},
+    {"date":"2025-10-30","avgHealthScore":84,"automationSuccessRate":81,"totalAutomationTasks":3,"openIncidentsCount":1},
+    {"date":"2025-10-31","avgHealthScore":86,"automationSuccessRate":84,"totalAutomationTasks":4,"openIncidentsCount":1},
+    {"date":"2025-11-01","avgHealthScore":85,"automationSuccessRate":82,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-02","avgHealthScore":86,"automationSuccessRate":83,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-03","avgHealthScore":87,"automationSuccessRate":85,"totalAutomationTasks":4,"openIncidentsCount":1},
+    {"date":"2025-11-04","avgHealthScore":88,"automationSuccessRate":87,"totalAutomationTasks":4,"openIncidentsCount":1},
+    {"date":"2025-11-05","avgHealthScore":86,"automationSuccessRate":80,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-06","avgHealthScore":87,"automationSuccessRate":82,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-07","avgHealthScore":88,"automationSuccessRate":85,"totalAutomationTasks":4,"openIncidentsCount":1},
+    {"date":"2025-11-08","avgHealthScore":87,"automationSuccessRate":84,"totalAutomationTasks":3,"openIncidentsCount":1},
+    {"date":"2025-11-09","avgHealthScore":86,"automationSuccessRate":82,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-10","avgHealthScore":85,"automationSuccessRate":80,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-11","avgHealthScore":86,"automationSuccessRate":81,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-12","avgHealthScore":87,"automationSuccessRate":83,"totalAutomationTasks":4,"openIncidentsCount":1},
+    {"date":"2025-11-13","avgHealthScore":88,"automationSuccessRate":85,"totalAutomationTasks":4,"openIncidentsCount":1},
+    {"date":"2025-11-14","avgHealthScore":87,"automationSuccessRate":84,"totalAutomationTasks":3,"openIncidentsCount":1},
+    {"date":"2025-11-15","avgHealthScore":86,"automationSuccessRate":82,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-16","avgHealthScore":85,"automationSuccessRate":80,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-17","avgHealthScore":86,"automationSuccessRate":81,"totalAutomationTasks":3,"openIncidentsCount":2},
+    {"date":"2025-11-18","avgHealthScore":86,"automationSuccessRate":80,"totalAutomationTasks":4,"openIncidentsCount":2},
+    {"date":"2025-11-19","avgHealthScore":87,"automationSuccessRate":82,"totalAutomationTasks":5,"openIncidentsCount":2},
+    {"date":"2025-11-20","avgHealthScore":88,"automationSuccessRate":85,"totalAutomationTasks":4,"openIncidentsCount":1},
+    {"date":"2025-11-21","avgHealthScore":86,"automationSuccessRate":78,"totalAutomationTasks":3,"openIncidentsCount":3},
+    {"date":"2025-11-22","avgHealthScore":89,"automationSuccessRate":90,"totalAutomationTasks":5,"openIncidentsCount":1},
+    {"date":"2025-11-23","avgHealthScore":84,"automationSuccessRate":75,"totalAutomationTasks":4,"openIncidentsCount":3},
+    {"date":"2025-11-24","avgHealthScore":87,"automationSuccessRate":86,"totalAutomationTasks":5,"openIncidentsCount":2}
+  ]
+}
