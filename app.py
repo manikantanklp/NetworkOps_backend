@@ -3,6 +3,15 @@ from flask_cors import CORS
 import json
 from datetime import datetime
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+SERVICENOW_INSTANCE = os.getenv("SERVICENOW_INSTANCE")
+SERVICENOW_USERNAME = os.getenv("SERVICENOW_USERNAME")
+SERVICENOW_PASSWORD = os.getenv("SERVICENOW_PASSWORD")
+
 
 # ---- Old APIs (inventory / discovery / config push) ----
 from inventory import (
@@ -13,6 +22,7 @@ from inventory import (
 from discovery_handler import run_discovery_api
 from status_checker import get_device_status
 from config_push import push_config
+from servicenow_api import get_incidents 
 
 # ---- NOC Dashboard Utils ----
 from utils.health import compute_health_overview, compute_device_health_score
@@ -339,6 +349,26 @@ def api_topology():
         "devices": DEVICES,
         "links": LINKS
     })
+
+# ===============================
+# 🎫 Ticketing Dashboard API
+# ===============================
+
+@app.route("/api/tickets", methods=["GET"])
+def api_tickets():
+    try:
+        tickets = get_incidents()  # Fetch live from ServiceNow
+        return jsonify(tickets)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/api/tickets/count", methods=["GET"])
+def api_tickets_count():
+    try:
+        tickets = get_incidents()  # get from ServiceNow
+        return jsonify({"count": len(tickets)})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 # -------------------------------
