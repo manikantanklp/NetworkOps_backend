@@ -4,30 +4,30 @@
         "vendor": "Cisco",
         "interfaces": [
             "192.168.1.1",
-            "192.168.5.1",
             "192.168.3.1",
+            "192.168.5.1",
             "192.168.4.1"
         ],
         "neighbors": [
-            "dsw-2.network.local",
-            "dsw-1.network.local",
+            "Switch1.network.local",
+            "Switch2.network.local",
             "R2.network.local"
         ],
         "username": "netkode",
         "password": "netkode"
     },
     {
-        "hostname": "dsw-2",
+        "hostname": "Switch1",
         "vendor": "Cisco",
         "interfaces": [
-            "192.168.5.2",
-            "192.168.7.2"
+            "192.168.3.2",
+            "192.168.6.2"
         ],
         "neighbors": [
-            "Switch.network.local",
-            "Switch.network.local",
-            "Switch.network.local",
-            "Switch.network.local",
+            "L2_Dumb.network.local",
+            "L2_switch2.network.local",
+            "L2_switch3.network.local",
+            "L2_switch1.netkode.local",
             "R1.network.local",
             "R2.network.local"
         ],
@@ -35,17 +35,17 @@
         "password": "netkode"
     },
     {
-        "hostname": "dsw-1",
+        "hostname": "Switch2",
         "vendor": "Cisco",
         "interfaces": [
-            "192.168.3.2",
-            "192.168.6.2"
+            "192.168.5.2",
+            "192.168.7.2"
         ],
         "neighbors": [
-            "Switch.network.local",
-            "Switch.network.local",
-            "Switch.network.local",
-            "Switch.network.local",
+            "L2_Dumb.network.local",
+            "L2_switch2.network.local",
+            "L2_switch3.network.local",
+            "L2_switch1.netkode.local",
             "R1.network.local",
             "R2.network.local"
         ],
@@ -57,12 +57,12 @@
         "vendor": "Cisco",
         "interfaces": [
             "192.168.4.2",
-            "192.168.7.1",
-            "192.168.6.1"
+            "192.168.6.1",
+            "192.168.7.1"
         ],
         "neighbors": [
-            "dsw-2.network.local",
-            "dsw-1.network.local",
+            "Switch1.network.local",
+            "Switch2.network.local",
             "R1.network.local"
         ],
         "username": "netkode",
