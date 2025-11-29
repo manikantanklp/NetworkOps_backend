@@ -3,6 +3,7 @@ from flask_cors import CORS
 import json
 from datetime import datetime
 from pathlib import Path
+from servicenow_api import get_incidents
 
 # ---- Old APIs (Inventory / Discovery / Config Push) ----
 from inventory import (
@@ -302,7 +303,25 @@ def api_topology():
 def ping():
     return jsonify({"status": "ok", "time": datetime.utcnow().isoformat()})
 
+# ===============================
+# 🎫 Ticketing Dashboard API
+# ===============================
 
+@app.route("/api/tickets", methods=["GET"])
+def api_tickets():
+    try:
+        tickets = get_incidents()  # Fetch live from ServiceNow
+        return jsonify(tickets)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/api/tickets/count", methods=["GET"])
+def api_tickets_count():
+    try:
+        tickets = get_incidents()  # get from ServiceNow
+        return jsonify({"count": len(tickets)})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 # --------------------------------------------------
 # MAIN
 # --------------------------------------------------
